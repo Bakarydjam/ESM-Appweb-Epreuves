@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(./Police/JosefinSans-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main: rgba(248, 2, 2, 0.929);
+  --main1: rgb(255, 230, 230);
+  --text: rgb(0 0 0);
+  --bg: rgba(252, 248, 248, 0.981);
+  --shadow: 2px 2px 10px rgb(14 52 54 / 15%);
+}
+
+/* ////////////////////////////////////////// */
+/* Navigation */
+/* ////////////////////////////////////////// */
+
+nav {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+nav.active {
+  box-shadow: var(--shadow);
+  background: var(--bg);
+  border: solid 2px #ddd;
+}
+
+nav div p {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--main);
+  margin-top: .8rem;
+}
+
+nav div {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation a {
+  padding: 0 1.5rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  color: var(--main);
+}
+
+nav img.btn_menue {
+  cursor: pointer;
+  transition: 0.2 ease-in-out;
+  display: none;
+}
+
+/* ////////////////////////////////////////// */
+/* Menue 1 */
+/* ////////////////////////////////////////// */
+
+section{
+  padding: 3rem;
+}
+
+section.menue {
+  margin-top: 8rem;
+}
+
+.menue {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menue-header p {
+  font-size: clamp(20px, 5vw, 25px);
+}
+
+.menue-header h1 {
+  font-size: clamp(50px, 5vw, 70px);
+  color: var(--main);
+  margin-top: 0.5rem;
+}
+
+.menue-header-img img {
+  width: 100%;
+}
+
+/* ////////////////////////////////////////// */
+/* Menue 2 */
+/* ////////////////////////////////////////// */
+
+section.menue2 {
+  margin: 1rem 0;
+}
+
+.menue2 p {
+  font-size: clamp(20px, 5vw, 25px);
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.menue-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.menue-container div {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+  padding: 0.8rem;
+  border-radius: 9px;
+  border: 3px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menue-container div p,
+.menue-container div button {
+  text-align: center;
+}
+
+.menue-container div p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.menue-container div p span {
+  color: var(--main);
+}
+
+.menue-container div button {
+  margin: 1.2rem auto;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: var(--main);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.menue-container div button:hover {
+  background: var(--text);
+}
+
+.menue-container div button a {
+  color: var(--bg);
+  font-size: 1.2rem;
+}
+
+/* ////////////////////////////////////////// */
+/* Menue-Epreuve */
+/* ////////////////////////////////////////// */
+
+.menue-Epreuve-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.menue-Epreuve-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: solid 3px #ddd;
+  padding-top: 1.2rem;
+  width: 90%;
+  border-radius: 15px;
+}
+
+.menue-Epreuve-container div button:hover {
+  background: var(--text);
+}
+
+.menue-Epreuve-container div button {
+  margin: 1.2rem auto;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: var(--main);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.menue-Epreuve-container div button a {
+  color: var(--bg);
+  font-size: 1.2rem;
+}
+
+.menue-Epreuve-container div p {
+  font-size: clamp(20px, 2vw, 28px);
+  margin: 0.5rem 0;
+}
+
+/* ////////////////////////////////////////// */
+/* Speciale */
+/* ////////////////////////////////////////// */
+
+p.speciale {
+  font-size: clamp(30px, 5vw, 45px);
+  margin-top: 14rem;
+  color: var(--text);
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  background: var(--main1);
+}
+
+p.speciale a img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  margin-right: 2.5rem;
+}
+
+
+@media screen and (min-width: 769px) {
+  .menue-Epreuve-container div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menue-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  nav {
+    padding: 50px 8%;
+  }
+
+  nav img.btn_menue {
+    display: block;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    flex-direction: column;
+    width: 280px;
+    height: 100vh;
+    background: var(--bg);
+    transition: 0.2s ease-in-out;
+    box-shadow: var(--shadow);
+    border: solid 1px #ddd;
+  }
+
+  .navigation li a {
+    display: block;
+    margin: 1.2rem 0;
+  }
+
+  .navigation li a:hover{
+    color: var(--main);
+  }
+
+  .navigation.active {
+    left: 0;
+  }
+
+}
